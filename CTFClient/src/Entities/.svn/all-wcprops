@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/4/trunk/CTFClient/src/Entities
+END
+HiveMind.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/7/trunk/CTFClient/src/Entities/HiveMind.java
+END
+Target.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/4/trunk/CTFClient/src/Entities/Target.java
+END
+OtherTeam.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/8/trunk/CTFClient/src/Entities/OtherTeam.java
+END
+Base.java
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/4/trunk/CTFClient/src/Entities/Base.java
+END
+Entity.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/4/trunk/CTFClient/src/Entities/Entity.java
+END
+Player.java
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/4/trunk/CTFClient/src/Entities/Player.java
+END
+Enemy.java
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/7/trunk/CTFClient/src/Entities/Enemy.java
+END

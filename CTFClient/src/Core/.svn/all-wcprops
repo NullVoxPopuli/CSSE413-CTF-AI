@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/svn/!svn/ver/4/trunk/CTFClient/src/Core
+END
+CTFPathThreadHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4/trunk/CTFClient/src/Core/CTFPathThreadHelper.java
+END
+CTFPathSolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/4/trunk/CTFClient/src/Core/CTFPathSolver.java
+END
+CTFCore.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/8/trunk/CTFClient/src/Core/CTFCore.java
+END
+CTFHeuristicSolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/4/trunk/CTFClient/src/Core/CTFHeuristicSolver.java
+END
+CTFException.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/4/trunk/CTFClient/src/Core/CTFException.java
+END
+CTFProductionSolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/4/trunk/CTFClient/src/Core/CTFProductionSolver.java
+END

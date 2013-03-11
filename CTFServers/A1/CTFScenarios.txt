@@ -1,0 +1,122 @@
+﻿# Stores all of the known Capture The Flag Scenarios.
+
+# A simple map with the player adjacent to the flag in the center of the board.
+A1-P1
+	Width        : 10
+	Height       : 10
+	Teams        : 1
+	Players      : 1
+	Flags        : 1
+	Solvable     : True
+	----------
+	----------
+	----------
+	----------
+	----0F----
+	----------
+	----------
+	----------
+	----------
+	----------
+
+	
+# A slightly more complicated map with some room between the player and flag.
+A1-P2
+	Width        : 10
+	Height       : 10
+	Teams        : 1
+	Players      : 1
+	Flags        : 1
+	Solvable     : True
+	----------
+	----------
+	----------
+	----------
+	---0--F---
+	----------
+	----------
+	----------
+	----------
+	----------
+
+
+# All of the way across the map.  Mainly checking if search trees are being pruned.
+A1-P3
+	Width        : 10
+	Height       : 10
+	Teams        : 1
+	Players      : 1
+	Flags        : 1
+	Solvable     : True
+	----------
+	----------
+	----------
+	----------
+	0--------F
+	----------
+	----------
+	----------
+	----------
+	----------
+
+
+	
+# The same problem with a few walls blocking the way.
+A1-P4
+	Width        : 10
+	Height       : 10
+	Teams        : 1
+	Players      : 1
+	Flags        : 1
+	Solvable     : True
+	----------
+	----------
+	----W-----
+	----W-----
+	--0-W-F---
+	----W-----
+	----W-----
+	----------
+	----------
+	----------
+
+
+# No solution, ha ha ha!
+A1-P5
+	Width        : 10
+	Height       : 10
+	Teams        : 1
+	Players      : 1
+	Flags        : 1
+	Solvable     : False
+	----------
+	----------
+	----WWWWW-
+	----W---W-
+	--0-W-F-W-
+	----W---W-
+	----WWWWW-
+	----------
+	----------
+	----------
+
+	
+# A relatively complex problem.  Have fun!
+A1-P6
+	Width        : 10
+	Height       : 10
+	Teams        : 1
+	Players      : 1
+	Flags        : 1
+	Solvable     : True
+	-W----W-W-
+	-WWWW-W-W-
+	--------W-
+	-W-----WW-
+	0W-----W-F
+	-WWWWWWW--
+	-W--------
+	-W-----W--
+	-WWWWW-W--
+	-------W--
+

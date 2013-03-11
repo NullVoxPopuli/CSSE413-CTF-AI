@@ -1,0 +1,98 @@
+﻿# Defines the protocol for the CaptureTheFlag packets.
+
+# The first line is a String by which the packets will be referred.
+# The remaining lines are the contents of the packet.
+
+# Internal packet syntax (comma delimited)
+# CTFS,Version=<version>,Time=<timestamp>,Type=<PacketType>,<key>=<value>,<key>=<value>,...\n
+
+# Data types
+# byte          - a single unsigned byte
+# int	        - a signed integer (4 bytes / 32 bits)
+# char			- a single character
+# string        - a string (encoded as a byte length then that many characters)
+
+# ----- Constants ----- 
+CONST VERSION : 5
+
+# ----- Packets that are generally sent from clients to the server ----- 
+
+# Sign in to the server or change username.
+SignIn
+	PlayerName  : string    # The new name of the player.
+
+# Create a new game on the server (and join it).
+CreateGame
+	Width        : byte     # The width of the game board.
+	Height       : byte     # The height of the game board.
+	Teams        : byte     # The number of teams in the game.
+	Players      : byte     # The number of players per team.
+	Flags        : byte     # The number of flags.
+	Seed         : byte     # The random seed that generates the board (0 will use system time).
+
+# Create a specific pre-programmed scenario.
+CreateScenario
+	Scenario     : string   # The assignment the scenario is for.
+	
+# List all of the scenarios that are currently available on the server.
+ListScenarios
+
+# List all of the players that are currently available on the server.
+ListPlayers
+	
+# Join a game belonging to the given player name.
+JoinGame
+	Opponent     : string   # The game ID to join.
+
+# Request the game state of the game you are currently in.
+RequestGameState
+
+# Make a move on the game you are currently playing.
+# Move format: {Source x}x{Source y}-{Destination x}x{Destination y};...
+# ie: 1x2-1x3;3x4-3x5 will move (1, 2) to (1, 3) and (3, 4) to (3, 5)
+# All indicies are 0 based.
+#
+# Alternatively, you can send "Unsolvable" as the move string.
+# If you are correct, you win.
+# If you are incorrect, you lose.
+MakeMove
+	Move         : string   # The move string (see above).
+
+# ----- Packets that are generally sent from the server to clients. -----
+
+# The action that you requested was completed successfully.
+Success
+	Origial      : string   # The timestamp from the original message.
+	
+# The action that you requested was not completed successfully.
+Fail
+	Original     : string   # The timestamp from the original message.
+	Reason       : string   # The reason that the action failed.
+	
+# A player has been added to the game you are currently in.	
+PlayerAdded
+	PlayerName   : string   # The name of the new player added to the game.
+	
+# Returned when a player requests a game state.
+# # = a player (# indicates the team)
+# w = wall
+# - = empty space
+GameState
+	Width        : byte     # The width of the game board.
+	Height       : byte     # The height of the game board.
+	State        : string   # The game board as a sequence of letters (top left to bottom right, across rows).
+	
+# Returned when a client requests the scenario list.
+ScenarioList
+	List         : string   # A semicolon delimited list of possible scenarios.
+	
+# Returned when a client requests the list of players on the server.
+PlayerList
+	List         : string   # A semicolon delimited list of players.
+	
+# Sent to a player when it is their turn to make a move on their current game.
+YourTurn
+
+# Sent to a player when a game is over.
+GameOver
+	Winner       : string   # The player that won the game.

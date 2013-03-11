@@ -1,0 +1,46 @@
+10
+
+dir
+6
+https://csse413-ai-ctf.googlecode.com/svn/trunk/CTFClient/src
+https://csse413-ai-ctf.googlecode.com/svn
+
+
+
+2010-10-20T03:25:26.505559Z
+5
+lt.sego@gmail.com
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+ce81e96f-4bf9-451d-be0b-d7eded4fd3ef
+
+CTF_AI
+dir
+
+Core
+dir
+
+Datastructs
+dir
+
+Entities
+dir
+
+GUI
+dir
+
+Network
+dir
+

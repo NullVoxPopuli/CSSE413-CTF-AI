@@ -1,0 +1,1 @@
+java CTF_AI/Main c
